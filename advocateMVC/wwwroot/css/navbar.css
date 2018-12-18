@@ -1,0 +1,28 @@
+﻿
+nav {
+    margin-top: 1px;
+}
+
+    nav ul {
+        text-align: right;
+        margin-right: 190px;
+    }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+            nav ul li a {
+                font-family: "Work Sans", Arial, sans-serif;
+                line-height: 1.7;
+                padding: 18px;
+                font-size: 16px;
+                text-decoration: none;
+                display: block;
+                transition: 0.3s;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+                nav ul li a:hover {
+                    color: white;
+                }

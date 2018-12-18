@@ -1,0 +1,33 @@
+﻿.form-conainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .feedback-form row {
+        margin-top: 0px;
+    }
+
+    .feedback-form table {
+        margin-top: 0px;
+    }
+
+    .feedback-form group {
+        margin-top: 0px;
+    }
+
+    .feedback-form row right {
+        margin-top: 0px;
+    }
+
+    .feedback-form table column {
+        margin-top: 0px;
+    }
+
+    .feedback-form control {
+        margin-top: 0px;
+    }

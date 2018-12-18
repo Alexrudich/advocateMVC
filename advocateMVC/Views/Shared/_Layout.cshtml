@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>@ViewBag.Title</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/main.css" />
+        <link rel="stylesheet" href="~/css/navbar.css" />
+    </environment>
+</head>
+<body>
+    <div class="overlay">
+        <div class="navigaion menu-content">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Домой</a></li>
+                        <li><a asp-controller="Home" asp-action="About">Обо мне</a></li>
+                        <li><a asp-controller="Home" asp-action="LegalPersons">Юр. лицам</a></li>
+                        <li><a asp-controller="Home" asp-action="PhysicalPersons">Физ. лицам</a></li>
+                        <li><a asp-controller="Home" asp-action="Contacts">Связаться</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-content">
+        <footer>
+            <p>&copy; 2018 - Advokat+</p>
+        </footer>
+    </div>
+    <environment include="Development">
+        @*<script src="~/js/"></script>*@
+        @* <script src="~/js/site.js" asp-append-version="true"></script>*@
+    </environment>
+
+    @*@RenderSection("Scripts", required: false)*@
+</body>
+</html>
