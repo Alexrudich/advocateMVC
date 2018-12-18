@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using advocateMVC.Models.Feedback;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,6 +38,20 @@ namespace advocateMVC
                 logger.LogInformation($"Environment: {_env.EnvironmentName}"); // Non-development service configuration
             }
 
+            EmailServerConfiguration config = new EmailServerConfiguration
+            {
+                SmtpPassword = "truelala7",
+                SmtpServer = "smtp.gmail.com",
+                SmtpUsername = "kenarius7@gmail.com"
+            };
+            EmailAddress FromEmailAddress = new EmailAddress
+            {
+                Address = "kenarius7@gmail.com",
+                Name = "Alex Rudich"
+            };
+            services.AddSingleton<EmailServerConfiguration>(config);
+            services.AddTransient<IEmailService, MailKitEmailService> ();
+            services.AddSingleton<EmailAddress>(FromEmailAddress);
             services.AddMvc();
         }
 
@@ -51,11 +66,6 @@ namespace advocateMVC
 
             app.UseMvc(routes =>
             {
-                // need route and attribute on controller: [Area("Blogs")]
-                routes.MapRoute(name: "areaRoute",
-                                template: "{area:exists}/{controller=Home}/{action=Index}");
-
-                // default route for non-areas
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
