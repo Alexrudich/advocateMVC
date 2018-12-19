@@ -53,6 +53,7 @@ namespace advocateMVC
             services.AddTransient<IEmailService, MailKitEmailService> ();
             services.AddSingleton<EmailAddress>(FromEmailAddress);
             services.AddMvc();
+
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

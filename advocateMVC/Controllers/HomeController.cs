@@ -24,12 +24,10 @@ namespace advocateMVC.Controllers
         [Route("Home/Index")]
         public IActionResult Index()
         {
-            //ViewBag.Title = "Home";
-            //ViewBag.Home = "class = active";
             return View();
         }
         [HttpPost]
-        public IActionResult Index(ContactFormModel model)
+        public IActionResult Index(/*[Bind(Include = "Name, LastName, Email, Message")]*/ ContactModel model)
         {
             if (ModelState.IsValid)
             {
@@ -37,7 +35,7 @@ namespace advocateMVC.Controllers
                 {
                     FromAddresses = new List<EmailAddress> { FromAndToEmailAddress },
                     ToAddresses = new List<EmailAddress> { FromAndToEmailAddress },
-                    Content = $"Вот ваше сообщение: Отправитель: {model.Name} + { model.LastName}," + $"Email: {model.Email}, Message: {model.Message}",
+                    Content = $"Вот ваше сообщение: Отправитель: {model.Contact.Name} + { model.Contact.LastName}," + $"Email: {model.Contact.Email}, Message: {model.Contact.Message}",
                     Subject = "Форма обратной связи - Мой крутой сайт"
                 };
                 EmailService.Send(msgToSend);
