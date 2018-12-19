@@ -9,7 +9,7 @@ namespace advocateMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private EmailAddress FromAndToEmailAddress;
+        private readonly EmailAddress FromAndToEmailAddress;
         private IEmailService EmailService;
         public HomeController(EmailAddress _fromAddress,IEmailService _emailService)
         {
@@ -30,7 +30,7 @@ namespace advocateMVC.Controllers
                 {
                     FromAddresses = new List<EmailAddress> { FromAndToEmailAddress },
                     ToAddresses = new List<EmailAddress> { FromAndToEmailAddress },
-                    Content = $"Вот ваше сообщение: Имя: {model.Name}, + Фамилия: { model.LastName}," + $"Email: {model.Email}, Message: {model.Message}",
+                    Content = $"Вот ваше сообщение: Отправитель: {model.Name} + { model.LastName}," + $"Email: {model.Email}, Message: {model.Message}",
                     Subject = "Форма обратной связи - Мой крутой сайт"
                 };
                 EmailService.Send(msgToSend);

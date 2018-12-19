@@ -40,7 +40,7 @@ namespace advocateMVC
 
             EmailServerConfiguration config = new EmailServerConfiguration
             {
-                SmtpPassword = "truelala7",
+                SmtpPassword = "password",
                 SmtpServer = "smtp.gmail.com",
                 SmtpUsername = "kenarius7@gmail.com"
             };
