@@ -16,5 +16,7 @@ namespace advocateMVC.Models.Feedback
         public string Email { get; set; }
         [Required, Display(Name = "Ваше сообщение")]
         public string Message { get; set; }
+        [Display(Name = "Телефон")]
+        public string PhoneNumber { get; set; }
     }
 }

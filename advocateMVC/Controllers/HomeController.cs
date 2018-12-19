@@ -26,26 +26,7 @@ namespace advocateMVC.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Index(/*[Bind(Include = "Name, LastName, Email, Message")]*/ ContactModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                EmailMessage msgToSend = new EmailMessage
-                {
-                    FromAddresses = new List<EmailAddress> { FromAndToEmailAddress },
-                    ToAddresses = new List<EmailAddress> { FromAndToEmailAddress },
-                    Content = $"Вот ваше сообщение: Отправитель: {model.Contact.Name} + { model.Contact.LastName}," + $"Email: {model.Contact.Email}, Message: {model.Contact.Message}",
-                    Subject = "Форма обратной связи - Мой крутой сайт"
-                };
-                EmailService.Send(msgToSend);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return Index();
-            }
-        }
+
 
 
         public IActionResult About()
@@ -56,6 +37,26 @@ namespace advocateMVC.Controllers
         public IActionResult Contacts()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Contacts(ContactModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                EmailMessage msgToSend = new EmailMessage
+                {
+                    FromAddresses = new List<EmailAddress> { FromAndToEmailAddress },
+                    ToAddresses = new List<EmailAddress> { FromAndToEmailAddress },
+                    Content = $"Отправитель: {model.Contact.Name} { model.Contact.LastName}," + $" Email: {model.Contact.Email}, Сообщение: {model.Contact.Message}. Телефон: {model.Contact.PhoneNumber}",
+                    Subject = "Новое сообщение с сайта"
+                };
+                EmailService.Send(msgToSend);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return Contacts();
+            }
         }
         public IActionResult LegalPersons()
         {

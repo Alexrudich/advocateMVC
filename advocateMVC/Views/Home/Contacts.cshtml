@@ -45,6 +45,17 @@
         <div class="feedback-form row">
             <div class="feedback-form table">
                 <div class="feedback-form group">
+                    <label asp-for="Contact.PhoneNumber" class="feedback-form row right"></label>
+                    <div class="feedback-form table column">
+                        <input asp-for="Contact.PhoneNumber" class="feedback-form control" />
+                        <span asp-validation-for="Contact.PhoneNumber"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-form row">
+            <div class="feedback-form table">
+                <div class="feedback-form group">
                     <label asp-for="Contact.Message" class="feedback-form row right"></label>
                     <div class="feedback-form table column">
                         <input asp-for="Contact.Message" class="feedback-form row right" />

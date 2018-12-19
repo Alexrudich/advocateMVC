@@ -7,7 +7,7 @@ namespace advocateMVC.Models.Feedback
 {
     public class EmailServerConfiguration
     {
-        public EmailServerConfiguration(int _smtpPort = 587)
+        public EmailServerConfiguration(int _smtpPort = 465)
         {
             SmtpPort = _smtpPort;
         }

@@ -41,13 +41,13 @@ namespace advocateMVC
             EmailServerConfiguration config = new EmailServerConfiguration
             {
                 SmtpPassword = "password",
-                SmtpServer = "smtp.gmail.com",
-                SmtpUsername = "kenarius7@gmail.com"
+                SmtpServer = "smtp.mail.ru",
+                SmtpUsername = "nastya0921@mail.ru"
             };
             EmailAddress FromEmailAddress = new EmailAddress
             {
-                Address = "kenarius7@gmail.com",
-                Name = "Alex Rudich"
+                Address = "nastya0921@mail.ru",
+                Name = "Анастасия Рудич"
             };
             services.AddSingleton<EmailServerConfiguration>(config);
             services.AddTransient<IEmailService, MailKitEmailService> ();
