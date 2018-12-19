@@ -23,6 +23,11 @@ nav {
                 color: rgba(255, 255, 255, 0.5);
             }
 
-                nav ul li a:hover {
+                nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
                     color: white;
                 }
+
+.active a  {
+    color: white;
+    /*font-size:25px;*/
+}
