@@ -6,7 +6,7 @@
 <h2>Contacts</h2>
 
 <h3>Форма обратной связи</h3>
-<div class="form container">
+<div class="form-container">
     <form asp-action="Index" asp-controller="Home" class="feedback-form" method="post">
         <div asp-validation-summary="All"></div>
         <div class="feedback-form row">
@@ -14,7 +14,7 @@
                 <div class="feedback-form group">
                     <label asp-for="Contact.Name" class="feedback-form row right"></label>
                     <div class="feedback-form table column">
-                        <input asp-for="Contact.Name" class="feedback-form control" />
+                        <input asp-for="Contact.Name" class="feedback-form control" type="text" placeholder="Введите ваше имя.."/>
                         <span asp-validation-for="Contact.Name"></span>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="feedback-form group">
                     <label asp-for="Contact.LastName" class="feedback-form row right"></label>
                     <div class="feedback-form table column">
-                        <input asp-for="Contact.LastName" class="feedback-form control" />
+                        <input asp-for="Contact.LastName" class="feedback-form control" type="text" placeholder="Введите вашиу фамилию.."/>
                         <span asp-validation-for="Contact.LastName"></span>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="feedback-form group">
                     <label asp-for="Contact.Email" class="feedback-form row right"></label>
                     <div class="feedback-form table column">
-                        <input asp-for="Contact.Email" class="feedback-form row right" />
+                        <input asp-for="Contact.Email" class="feedback-form row right" type="text" placeholder="Введите ваш адрес электронной почты.."/>
                         <span asp-validation-for="Contact.Email"></span>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                 <div class="feedback-form group">
                     <label asp-for="Contact.PhoneNumber" class="feedback-form row right"></label>
                     <div class="feedback-form table column">
-                        <input asp-for="Contact.PhoneNumber" class="feedback-form control" />
+                        <input asp-for="Contact.PhoneNumber" class="feedback-form control" type="text" placeholder="Введите ваш номер мобильного телефона.."/>
                         <span asp-validation-for="Contact.PhoneNumber"></span>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                 <div class="feedback-form group">
                     <label asp-for="Contact.Message" class="feedback-form row right"></label>
                     <div class="feedback-form table column">
-                        <input asp-for="Contact.Message" class="feedback-form row right" />
+                        <input asp-for="Contact.Message" class="feedback-form row right" type="text" placeholder="Ваше сообщение.."/>
                         <span asp-validation-for="Contact.Message"></span>
                     </div>
                 </div>

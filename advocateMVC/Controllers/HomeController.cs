@@ -27,8 +27,6 @@ namespace advocateMVC.Controllers
             return View();
         }
 
-
-
         public IActionResult About()
         {
             return View();
@@ -47,7 +45,7 @@ namespace advocateMVC.Controllers
                 {
                     FromAddresses = new List<EmailAddress> { FromAndToEmailAddress },
                     ToAddresses = new List<EmailAddress> { FromAndToEmailAddress },
-                    Content = $"Отправитель: {model.Contact.Name} { model.Contact.LastName}," + $" Email: {model.Contact.Email}, Сообщение: {model.Contact.Message}. Телефон: {model.Contact.PhoneNumber}",
+                    Content = $"Отправитель: {model.Contact.Name} { model.Contact.LastName}," + $" Email: {model.Contact.Email}. Сообщение: {model.Contact.Message}. Телефон: {model.Contact.PhoneNumber}",
                     Subject = "Новое сообщение с сайта"
                 };
                 EmailService.Send(msgToSend);
