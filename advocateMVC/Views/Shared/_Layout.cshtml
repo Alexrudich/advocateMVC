@@ -9,10 +9,12 @@
         <link rel="stylesheet" href="~/css/main.css" />
         <link rel="stylesheet" href="~/css/navbar.css" />
         <link rel="stylesheet" href="~/css/contactform.css" />
+        <link rel="stylesheet" href="~/css/loader.css" />
     </environment>
 </head>
 <body>
-    <div class="overlay">
+
+    <div class="test-overlay">
         <div class="navigaion menu-content">
             <header>
                 <nav>
@@ -29,6 +31,7 @@
             <div class="container body-content">
                 @RenderBody()
                 <hr />
+                <div id="loader" class="preloader"><div></div><div></div></div>
             </div>
         </div>
     </div>
@@ -39,10 +42,11 @@
         </footer>
     </div>
     <environment include="Development">
-        @*<script src="~/js/"></script>*@
-        @* <script src="~/js/site.js" asp-append-version="true"></script>*@
+        <script src="~/js/loader.js"></script>
+        @*<script src="~/js/loader.js" asp-append-version="true"></script>*@
     </environment>
 
     @*@RenderSection("Scripts", required: false)*@
+
 </body>
 </html>
