@@ -7,10 +7,10 @@
 .feedback-form {
     max-width: 600px;
     text-align: center;
-    margin: 20px auto;
+    margin: 5px auto;
 }
 
-    .feedback-form row {
+    /*.feedback-form row {
         margin-top: 0px;
     }
 
@@ -32,7 +32,7 @@
 
     .feedback-form control {
         margin-top: 0px;
-    }
+    }*/
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
     color: #bbb5af;
 }

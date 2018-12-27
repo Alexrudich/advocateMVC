@@ -1,4 +1,13 @@
-﻿body .test-overlay {
-    /*background-image: url("../img/img_bg_1.jpg")*/
+﻿body .parallax {
     background-color: darkslategray;
+}
+/*body .body-content {
+    color: white;
+}*/
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }

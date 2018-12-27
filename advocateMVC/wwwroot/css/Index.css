@@ -1,0 +1,33 @@
+﻿body .parallax {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/img_bg_1.jpg');
+    /* Set a specific height */
+    min-height: 450px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#textbox-popup {
+    /*color: white;*/
+    text-align: left;
+    font-family: sans-serif;
+    width:400px;
+}
+h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: black;
+}
+.practicearea h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #000;
+    text-align:center;
+}
+h2 {
+    color: goldenrod;
+}
