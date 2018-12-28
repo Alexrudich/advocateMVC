@@ -1,5 +1,5 @@
 ﻿body .parallax {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/img_bg_1.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/img_bg_1.jpg');
     /* Set a specific height */
     min-height: 450px;
     /* Create the parallax scrolling effect */
@@ -10,24 +10,121 @@
 }
 
 #textbox-popup {
-    /*color: white;*/
-    text-align: left;
-    font-family: sans-serif;
-    width:400px;
-}
-h4 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857;
     color: black;
+    text-align: left;
+    font-family: "Work Sans", Arial, sans-serif;
+    width: 400px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
+
+h4 {
+    font-size: 18px;
+    color: #000;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+h2 {
+    color: #EA9215;
+}
+
+.contacts-btn {
+    color: #EA9215;
+}
+
+#link {
+    color: #EA9215;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+h3 {
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+#default-btn {
+    color: whitesmoke;
+    background-color: #EA9215;
+    /*border: none !important;*/
+    font-size: 18px;
+    /*padding: 18px 36px !important;*/
+    padding: 18px 36px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Work Sans", Arial, sans-serif;
+    transition: 0.5s;
+    line-height: 1.33333;
+    text-align: center;
+    vertical-align: middle;
+    /*border-radius: 50px 0 0 50px;*/
+    border-radius: 50px;
+   
+}
+    #default-btn:hover {
+        box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+    }
+
 .practicearea h2 {
     font-size: 32px;
     margin-bottom: 20px;
     line-height: 1.5;
     color: #000;
+    text-align: center;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+.practicearea-header p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #828282;
     text-align:center;
 }
-h2 {
-    color: goldenrod;
+.personalization-container {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
+    background: #EA9215;
+    content: " ";
+    display: table;
+    width: 100%;
+}
+.personalisation-container{
+    margin: 0 auto;
+    padding: 15px;
+}
+.personalisation-sector {
+    display: inline-block;
+}
+
+.personalisation-sector {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin-left: 15px;
+}
+.services{
+    padding: 10px;
+}
+
+.desc h3,
+p{
+    text-align: center;
+    margin: 1px;
+}
+.about-btn {
+    text-align: center;
 }
