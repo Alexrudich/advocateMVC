@@ -1,7 +1,7 @@
 ﻿body .parallax {
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/img_bg_1.jpg');
     /* Set a specific height */
-    min-height: 450px;
+    min-height: 600px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -10,7 +10,7 @@
 }
 
 #textbox-popup {
-    color: black;
+    color: whitesmoke;
     text-align: left;
     font-family: "Work Sans", Arial, sans-serif;
     width: 400px;
@@ -52,6 +52,7 @@ h3 {
     font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
     text-align: left;
+    color: whitesmoke;
 }
 #default-btn {
     color: whitesmoke;
@@ -124,7 +125,30 @@ h3 {
 p{
     text-align: center;
     margin: 1px;
+
 }
 .about-btn {
     text-align: center;
+}
+.consultation-area {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/img_bg_1.jpg');
+    min-height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.index-container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.title-overlay {
+    position: absolute;
+    width: 1170px;
+    margin: 0 auto;
+    top: 8em;
 }
