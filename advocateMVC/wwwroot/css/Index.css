@@ -57,7 +57,6 @@ h3 {
 #default-btn {
     color: whitesmoke;
     background-color: #EA9215;
-    /*border: none !important;*/
     font-size: 18px;
     /*padding: 18px 36px !important;*/
     padding: 18px 36px;
@@ -86,6 +85,10 @@ h3 {
     font-weight: 400;
     margin: 0 0 20px 0;
 }
+
+/*.practicearea {
+    margin: 30px;
+}*/
 .practicearea-header p {
     font-size: 18px;
     line-height: 1.5;
@@ -93,6 +96,7 @@ h3 {
     text-align:center;
 }
 .personalization-container {
+
     font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;

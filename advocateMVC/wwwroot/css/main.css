@@ -1,8 +1,14 @@
-﻿body .parallax {
+﻿* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+body .parallax {
     background-color: darkslategray;
 }
 
 body {
+    margin: 0;
     background-color: #f6f5f5;
 }
 
@@ -15,19 +21,17 @@ body {
     width: 1170px;
     margin: 0 auto;
     position: relative;
-    /*vertical-align: top;*/
 }
 .footer-content-header {
+    margin: 35px;
     text-align: center;
     display: inline-block;
-    /*vertical-align: top;*/
 }
 .footer-widget {
-    /*position: relative;*/
+    vertical-align: top;
     text-align: center;
     display: inline-block;
     width: 24%;
-
 }
 
 .footer-widget-links li {
