@@ -15,19 +15,19 @@
 </head>
 <body>
     <div class="parallax">
-            <div class="navigaion menu-content">
-                <header>
-                    <nav>
-                        <ul>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("legalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="LegalPersons">Юр. лицам</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("physicalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="PhysicalPersons">Физ. лицам</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
+        <div class="navigaion menu-content">
+            <header>
+                <nav>
+                    <ul>
+                        <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                        <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
+                        <li class="@(Context.Request.Path.Value.ToLower().Contains("legalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="LegalPersons">Юр. лицам</a></li>
+                        <li class="@(Context.Request.Path.Value.ToLower().Contains("physicalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="PhysicalPersons">Физ. лицам</a></li>
+                        <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     </div>
     <div class="container body-content">
         @RenderBody()
@@ -35,7 +35,41 @@
         <div id="loader" class="preloader"><div></div><div></div></div>
     </div>
 
-    <div class="container footer-content">
+    <div class="container-footer-content">
+        <div class="footer-content-header">
+            <div class="footer-widget">
+                <h4>Attorney's Law</h4>
+                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+            </div>
+            <div class="footer-widget">
+                <h4>Navigation</h4>
+                <ul class="footer-widget-links">
+                    <li><a href="#">Домой</a></li>
+                    <li><a href="#">Юр. лицам</a></li>
+                    <li><a href="#">Физ. лицам</a></li>
+                    <li><a href="#">Связаться</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                </ul>
+            </div>
+            <div class="footer-widget">
+                <h4>Contact Information</h4>
+                <ul class="footer-widget-links">
+                    <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
+                    <li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+                    <li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+                    <li><a href="http://gettemplates.co">gettemplates.co</a></li>
+                </ul>
+            </div>
+            <div class="footer-widget">
+                <h4>Opening Hours</h4>
+                <ul class="footer-widget-links">
+                    <li>Mon - Thu: 9:00 - 21 00</li>
+                    <li>Fri 8:00 - 21 00</li>
+                    <li>Sat 9:30 - 15: 00</li>
+                </ul>
+            </div>
+        </div>
         <footer>
             <p>&copy; 2018 - Advokat+</p>
         </footer>

@@ -1,10 +1,30 @@
 ﻿body .parallax {
     background-color: darkslategray;
 }
-/*.container body-content {
+
+body {
+    background-color: #f6f5f5;
+}
+
+.container-footer-content {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
     width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+}
+/*.footer-content-header {
+    display: inline-block;
 }*/
+.footer-widget {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+}
+
+.footer-widget-links li {
+    text-decoration: none;
+}

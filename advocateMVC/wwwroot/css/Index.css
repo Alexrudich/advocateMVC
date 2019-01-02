@@ -100,7 +100,7 @@ h3 {
     color: #828282;
     background: #EA9215;
     content: " ";
-    display: table;
+    /*display: table;*/
     width: 100%;
 }
 .personalisation-container{
@@ -130,15 +130,7 @@ p{
 .about-btn {
     text-align: center;
 }
-.consultation-area {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/img_bg_1.jpg');
-    min-height: 400px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .index-container {
     width: 1170px;
     margin-right: auto;
@@ -151,4 +143,32 @@ p{
     width: 1170px;
     margin: 0 auto;
     top: 8em;
+}
+.consultation-area {
+
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/img_bg_1.jpg');
+    min-height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.consultation-area {
+    text-align: center;
+    color: whitesmoke;
+}
+#consultation-textbox-header {
+    font-size: 30px;
+    padding:10px;
+}
+#consultation-textbox-popup {
+    color: whitesmoke;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.consultation-area-text{
+    padding:100px;
 }
