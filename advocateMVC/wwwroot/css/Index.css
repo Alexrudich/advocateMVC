@@ -31,6 +31,7 @@ h2 {
 }
 
 .contacts-btn {
+    margin-top: 20px;
     color: #EA9215;
 }
 
@@ -83,13 +84,12 @@ h3 {
     text-align: center;
     font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    /*margin: 0 0 20px 0;*/
+    margin-top: 20px;
 }
 
-/*.practicearea {
-    margin: 30px;
-}*/
 .practicearea-header p {
+    
     font-size: 18px;
     line-height: 1.5;
     color: #828282;
@@ -113,6 +113,7 @@ h3 {
 }
 .personalisation-sector {
     display: inline-block;
+    vertical-align: top;
 }
 
 .personalisation-sector {
@@ -161,6 +162,10 @@ p{
 .consultation-area {
     text-align: center;
     color: whitesmoke;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #consultation-textbox-header {
     font-size: 30px;
