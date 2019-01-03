@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\icons\icon-buisness.png" />
+    <Content Remove="wwwroot\icons\icon-eye.png" />
+    <Content Remove="wwwroot\icons\icon-home.png" />
+    <Content Remove="wwwroot\icons\icon-hospital.png" />
+    <Content Remove="wwwroot\icons\icon-person.png" />
+    <Content Remove="wwwroot\icons\icon-shopping-cart.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MailKit" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.6" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.0" />
@@ -18,6 +27,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
     <PackageReference Include="MimeKit" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fontawesome-pro\" />
   </ItemGroup>
 
 </Project>
