@@ -25,12 +25,12 @@
             <div class="practicearea-header">
                 <div>
                     <h2>Области юридической практики</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    @*<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>*@
                 </div>
                 <div class="personalisation-container">
                     <div class="personalisation-sector">
                         <div class="services">
-                            <p><img src="~/icons/icon-home.png"></p>
+                            <p><i class="far fa-gavel"></i></p>
                             <div class="desc">
                                 <h3><a id="link" href="#">Гражданское право</a></h3>
                                 <p>Одна из самых объемных и самых сложных сфер деятельности, включает в себя широкий спектр юридической помощи: взыскание долгов, оспаривание сделок, признание сделок недействительными, правовую оценку договоров и др.</p>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="personalisation-sector">
                         <div class="services">
-                            <p><img src="~/icons/icon-eye.png"></p>
+                            <p><i class="far fa-user-secret"></i></p>
                             <div class="desc">
                                 <h3><a id="link" href="#">Уголовное право</a></h3>
                                 <p>Юридическая помощь предоставляется как подозреваемым и обвиняемым (защита на стадии предварительного следствия и в суде), так и потерпевшим (представление интересов, предъявление гражданского иска, взыскание морального вреда).</p>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="personalisation-sector">
                         <div class="services">
-                            <p><img src="~/icons/icon-shopping-cart.png"></p>
+                            <p><i class="far fa-home"></i></p>
                             <div class="desc">
                                 <h3><a id="link" href="#">Жилищное право</a></h3>
                                 <p>Выселение граждан, определение порядка пользования жилым помещением, снятие с регистрационного учета, вопросы приватизации и совместного домовладения, постановки на учет нуждающихся в улучшении жилищных условий и т.п.</p>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="personalisation-sector">
                         <div class="services">
-                            <p><img src="~/icons/icon-hospital.png"></p>
+                            <p><i class="far fa-book"></i></p>
                             <div class="desc">
                                 <h3><a id="link" href="#">Хозяйственное право</a></h3>
                                 <p>Юридическое сопровождение хозяйственной деятельности – одно из важнейших направлений юридической помощи, включает в себя консультации, составление проектов договоров, претензий, исковых заявлений, представление интересов в суде и на стадии исполнительного производства.</p>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="personalisation-sector">
                         <div class="services">
-                            <p><img src="~/icons/icon-security.png"></p>
+                            <p><i class="far fa-users"></i></p>
                             <div class="desc">
                                 <h3><a id="link" href="#">Семейное право</a></h3>
                                 <p>Брачный договор, расторжение брака, раздел совместно нажитого имущества, взыскание алиментов, определение места жительства ребенка, определение порядка общения с ребенком и участия в его воспитании, лишение родительских прав.</p>
@@ -76,7 +76,7 @@
 
                     <div class="personalisation-sector">
                         <div class="services">
-                            <p><img src="~/icons/icon-person.png"></p>
+                            <p><i class="far fa-shield-alt"></i></p>
                             <div class="desc">
                                 <h3><a id="link" href="#">Иные отрасли права</a></h3>
                                 <p>Адвокат оказывает юридическую помощь в области административного, наследственного, налогового, трудового, земельного и таможенного права. Такая помощь оказывается в виде устных и письменных консультаций, составлении правовых документов и представлении интересов клиентов.</p>
@@ -98,10 +98,9 @@
     </div>
     <div class="consultation-area">
         <div class="consultation-area-text">
-            <p id="consultation-textbox-header">Legal Advice </p>
+            <p id="consultation-textbox-header">Консультация адвоката </p>
             <p id="consultation-textbox-popup">
-                
-                I can help you effectively fight your offenders back and successfully defend their own stand!
+                Адвокат ответит на ваши вопросы в соответствии с нормами законодательства.
             </p>
             <div class="contacts-btn">
                 <form asp-controller="Home" asp-action="Contacts" method="get">
