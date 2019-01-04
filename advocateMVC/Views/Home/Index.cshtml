@@ -5,7 +5,7 @@
 }
 <link href="~/css/Index.css" rel="stylesheet" />
 <div>
-    <div class="index-container">
+    <div class="container">
         <div class="title-overlay">
             <h4>High-Quality Legal Services</h4>
             <p id="textbox-popup">
@@ -94,21 +94,23 @@
             </div>
 
         </div>
-
     </div>
-    <div class="consultation-area">
-        <div class="consultation-area-text">
-            <p id="consultation-textbox-header">Консультация адвоката </p>
-            <p id="consultation-textbox-popup">
-                Адвокат ответит на ваши вопросы в соответствии с нормами законодательства.
-            </p>
-            <div class="contacts-btn">
-                <form asp-controller="Home" asp-action="Contacts" method="get">
-                    <button type="submit" id="default-btn">Получить консультацию</button>
-                </form>
+       
+        <div class="consultation-area">
+            <div class="consultation-area-text">
+                <p id="consultation-textbox-header">Консультация адвоката </p>
+                <p id="consultation-textbox-popup">
+                    Адвокат ответит на ваши вопросы в соответствии с нормами законодательства.
+                </p>
+                <div class="contacts-btn">
+                    <form asp-controller="Home" asp-action="Contacts" method="get">
+                        <button type="submit" id="default-btn">Получить консультацию</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    
+   
 </div>
 
 

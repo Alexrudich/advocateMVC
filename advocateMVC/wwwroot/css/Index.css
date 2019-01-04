@@ -59,18 +59,14 @@ h3 {
     color: whitesmoke;
     background-color: #EA9215;
     font-size: 18px;
-    /*padding: 18px 36px !important;*/
     padding: 18px 36px;
-    margin-right: 4px;
-    margin-bottom: 4px;
     font-family: "Work Sans", Arial, sans-serif;
     transition: 0.5s;
     line-height: 1.4;
     text-align: center;
     vertical-align: middle;
-    /*border-radius: 50px 0 0 50px;*/
     border-radius: 50px;
-   
+    border: none;
 }
     #default-btn:hover {
         box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
@@ -133,14 +129,6 @@ p{
 .about-btn {
     text-align: center;
 }
-
-.index-container {
-    width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 .title-overlay {
     position: absolute;
     width: 1170px;
@@ -148,7 +136,7 @@ p{
     top: 8em;
 }
 .consultation-area {
-
+     background-size: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/img_bg_1.jpg');
     min-height: 300px;
     /* Create the parallax scrolling effect */

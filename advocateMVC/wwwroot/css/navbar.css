@@ -20,7 +20,7 @@ nav {
                 display: block;
                 transition: 0.3s;
                 color: rgba(255, 255, 255, 0.5);
-                /*color:gray;*/
+                /*width: 1170px;*/
             }
 
                 nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
@@ -29,4 +29,19 @@ nav {
                 }
 .active a {
     color: #EA9215;
+}
+nav .logo .brand {
+    font-family: "Work Sans", Arial, sans-serif;
+    line-height: 1.8;
+    padding: 18px;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    color: #EA9215;
+    text-align: left;
+    margin-left: 352px;
+    top: 8em;
+    float: left;
 }

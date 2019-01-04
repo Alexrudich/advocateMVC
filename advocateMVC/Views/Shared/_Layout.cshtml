@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <title>@ViewBag.Title</title>
     <environment include="Development">
-        <link  rel="icon" href="~/icons/icon-security.png" type="image/ico" />
+        <link rel="icon" href="~/icons/icon-security.png" type="image/ico" />
         <link rel="stylesheet" href="~/css/main.css" />
         <link rel="stylesheet" href="~/css/navbar.css" />
-        <link rel="stylesheet" href="~/css/contactform.css" />
+        <link rel="stylesheet" href="~/css/contacts.css" />
         <link rel="stylesheet" href="~/css/loader.css" />
         <link rel="stylesheet" href="~/css/fading.css" />
         <link href="~/fontawesome-pro/css/all.css" rel="stylesheet" />
@@ -20,6 +20,9 @@
         <div class="navigaion menu-content">
             <header>
                 <nav>
+                    <div class="logo">
+                        @Html.ActionLink("ADVOKAT+", "Index", "Home", new { area = "" }, new { @class = "brand" })
+                    </div>
                     <ul>
                         <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
                         <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
@@ -31,7 +34,7 @@
             </header>
         </div>
     </div>
-    <div class="container body-content">
+    <div >
         @RenderBody()
         <div id="loader" class="preloader"><div></div><div></div></div>
     </div>

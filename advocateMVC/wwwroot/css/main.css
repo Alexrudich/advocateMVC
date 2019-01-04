@@ -1,6 +1,6 @@
 ﻿* {
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
 
 body .parallax {
@@ -11,7 +11,13 @@ body {
     margin: 0;
     background-color: #f6f5f5;
 }
-
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .container-footer-content {
     text-align: center;
     font-family: "Work Sans", Arial, sans-serif;
@@ -23,27 +29,33 @@ body {
     margin: 0 auto;
     position: relative;
 }
+
 .footer-content-header {
     /*margin: 35px;*/
     text-align: center;
     display: inline-block;
 }
+
 .footer-widget {
     vertical-align: top;
     text-align: left;
     display: inline-block;
     width: 270px;
 }
+
     .footer-widget p {
         text-align: left;
     }
-    .footer-widget-links li {
-    list-style-type: none; 
+
+.footer-widget-links li {
+    list-style-type: none;
 }
-.footer-widget-links li a {
-    text-decoration: none;
-    color: #828282;
-}
+
+    .footer-widget-links li a {
+        text-decoration: none;
+        color: #828282;
+    }
+
 .footer-widget-links a {
     transition: 0.5s;
 }
