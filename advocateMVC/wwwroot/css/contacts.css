@@ -31,14 +31,15 @@
 .contact-infobox {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
+    padding-left: 18px;
     padding-right: 15px;
     display: inline-block;
     text-align: left;
     vertical-align: top;
     /*border: solid;*/
     display: inline-block;
-    width: 25%;
+    width: 30%;
+    font-family: sans-serif;
 }
 
     .contact-infobox h3 {
@@ -52,12 +53,17 @@
         color: #EA9215;
         font-size: 25px;
     }
-
-        .contact-infobox li a {
-            margin-left: 10px;
+        .contact-infobox li p {
             color: #828282;
+            margin-left: 40px;
+            margin-top: -25px;
+        }
+            .contact-infobox li a {
+            margin-left: 10px;
+            /*color: #828282;*/
+            color: #EA9215;
             text-decoration: none;
-            text-align:right;
+            text-align: right;
         }
 
 /*.feedback-form {
@@ -120,4 +126,16 @@ button[type=submit] {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+#map {
+   height: 500px; 
+   width: 100%; 
+   /*position: absolute;*/ 
+   top: 0px; 
+   left: 0px; 
+   /*background-color: rgb(229, 227, 223);*/
+}
+.far fa-exclamation-circle {
+    user-select: none;
+    
 }
