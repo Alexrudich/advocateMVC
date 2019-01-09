@@ -24,14 +24,16 @@ nav {
             text-decoration: none;
             transition: 0.3s;
         }
+
             .navbar ul li a:hover {
                 color: #EA9215;
             }
+
             .navbar ul li a:hover, .navbar ul li a:focus {
                 color: rgba(255, 255, 255, 0.9)
             }
 
-    .navbar ul .active a{
+    .navbar ul .active a {
         color: #EA9215;
     }
 
@@ -40,13 +42,11 @@ nav {
     line-height: 1.8;
     padding: 18px;
     font-size: 25px;
-    font-weight: 400;
+    font-weight:bolder;
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
     color: #EA9215;
     text-align: left;
     margin-left: 352px;
-    top: 8em;
-    /*float: left;*/
 }

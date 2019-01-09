@@ -11,6 +11,7 @@ body {
     margin: 0;
     background-color: #f6f5f5;
 }
+
 .container {
     width: 1170px;
     margin-right: auto;
@@ -18,12 +19,13 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .container-footer-content {
     text-align: center;
     font-family: "Work Sans", Arial, sans-serif;
-    font-weight: 400;
+    /*font-weight: 400;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.7;*/
     color: #828282;
     width: 1170px;
     margin: 0 auto;
@@ -56,12 +58,25 @@ body {
         color: #828282;
     }
 
-.footer-widget-links a {
-    transition: 0.5s;
-}
-.social-icons li a i {
-    font-size: 17px;
-    color: #EA9215;
-    text-decoration: none;
+.footer-widget-links a:hover {
+    text-decoration: underline;
 }
 
+.social-icons li a {
+    color: #EA9215;
+    margin: 10px;
+}
+
+.social-icons li {
+    list-style-type: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    font-size: 20px;
+    margin-top: 10px;
+}

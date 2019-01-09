@@ -17,7 +17,6 @@
     </environment>
 </head>
 <body>
-
     <div class="parallax">
         <div class="navigaion menu-content">
             <header>
@@ -29,8 +28,6 @@
                         <ul>
                             <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
                             <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
-                            @*<li class="@(Context.Request.Path.Value.ToLower().Contains("legalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="LegalPersons">Юр. лицам</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("physicalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="PhysicalPersons">Физ. лицам</a></li>*@
                             <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
                         </ul>
                     </div>
@@ -54,7 +51,6 @@
                 <div>
                     <p>Лицензия на право<br />осуществления адвокатской деятельности<br />№02240/2949 от 22.12.2017</p>
                 </div>
-
             </div>
             <div class="footer-widget">
                 <div>
@@ -63,8 +59,6 @@
                 <div>
                     <ul class="footer-widget-links">
                         <li><a href="/Home/Index">Домой</a></li>
-                        @*<li><a href="/Home/LegalPersons">Юр. лицам</a></li>
-                        <li><a href="/Home/PhysicalPersons">Физ. лицам</a></li>*@
                         <li><a href="/Home/Contacts">Контакты</a></li>
                         <li><a href="/Home/About">Обо мне</a></li>
                     </ul>
@@ -78,7 +72,6 @@
                     <ul class="footer-widget-links">
                         <li>Минская обл., Минский р-н, <br>д. Боровляны-2, ул. Хвойная 2,</li>
                         <li> Р-40, 1-й км2, ком. 27.  </li>
-                        @*<li> 223053 г.п. Боровляны, Беларусь </li>*@
                         <li><a href="tel://375296589506">+375 29 658 95 06</a></li>
                         <li><a href="mailto:advokatplus@tut.by">advokatplus@tut.by</a></li>
                     </ul>
@@ -102,12 +95,14 @@
         <footer>
             <br />
             <p>&copy; All Rights Reserved.</p>
-            <br />
             <ul class="social-icons">
-                <li><a href="#"></a><i class="fab fa-telegram"></i> </li>
-                <li><a href="#"></a><i class="fab fa-skype"></i></li>
-                <li><a href="#"></a><i class="fab fa-viber"></i></li>
+                <li><a href="tg://resolve?domain=+375 29 658 9506"><i class="fab fa-telegram-plane"></i> </a></li>
+                <li><a href="https://wa.me/375296589506"><i class="fab fa-whatsapp"></i> </a></li>
+                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                <li><a href="viber://chat?number=+375296589506"><i class="fab fa-viber"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/anastasiya-halion-680097164/"><i class="fab fa-linkedin"></i></a></li>
             </ul>
+            <br />
         </footer>
     </div>
     <environment include="Development">

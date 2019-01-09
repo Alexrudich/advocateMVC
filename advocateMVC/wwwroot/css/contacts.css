@@ -36,8 +36,6 @@
     display: inline-block;
     text-align: left;
     vertical-align: top;
-    /*border: solid;*/
-    display: inline-block;
     width: 30%;
     font-family: sans-serif;
 }
@@ -125,27 +123,8 @@ button[type=submit] {
 #map {
     height: 500px;
     width: 100%;
-    /*position: absolute;*/
-    top: 0px;
-    left: 0px;
-    /*background-color: rgb(229, 227, 223);*/
 }
 
 .far fa-exclamation-circle {
     user-select: none;
 }
-
-/*.testflex {
-    display: -webkit-flex;
-    display: flex;
-    border: solid;
-}
-
-.testlogo {
-    border: solid;
-}
-
-.testnavbar {
-    margin-left: auto;
-    border: solid;
-}*/
