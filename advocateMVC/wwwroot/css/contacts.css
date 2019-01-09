@@ -10,7 +10,7 @@
 }
 
 .form-box-complete {
-    font-family: "Semi-Bold", Regular, Roboto;
+    /*font-family: "Semi-Bold", Regular, Roboto;*/
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -53,26 +53,20 @@
         color: #EA9215;
         font-size: 25px;
     }
+
         .contact-infobox li p {
             color: #828282;
             margin-left: 40px;
             margin-top: -25px;
         }
-            .contact-infobox li a {
+
+        .contact-infobox li a {
             margin-left: 10px;
             /*color: #828282;*/
             color: #EA9215;
             text-decoration: none;
             text-align: right;
         }
-
-/*.feedback-form {
-
-}
-
-.feedback-form-name {
-  
-}*/
 
 .feedback-form-name .feedback-form-row {
     display: inline-block;
@@ -127,15 +121,31 @@ button[type=submit] {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
 #map {
-   height: 500px; 
-   width: 100%; 
-   /*position: absolute;*/ 
-   top: 0px; 
-   left: 0px; 
-   /*background-color: rgb(229, 227, 223);*/
+    height: 500px;
+    width: 100%;
+    /*position: absolute;*/
+    top: 0px;
+    left: 0px;
+    /*background-color: rgb(229, 227, 223);*/
 }
+
 .far fa-exclamation-circle {
     user-select: none;
-    
 }
+
+/*.testflex {
+    display: -webkit-flex;
+    display: flex;
+    border: solid;
+}
+
+.testlogo {
+    border: solid;
+}
+
+.testnavbar {
+    margin-left: auto;
+    border: solid;
+}*/

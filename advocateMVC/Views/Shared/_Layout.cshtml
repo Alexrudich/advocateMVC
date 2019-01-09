@@ -13,10 +13,11 @@
         <link rel="stylesheet" href="~/css/loader.css" />
         <link rel="stylesheet" href="~/css/fading.css" />
         <link href="~/fontawesome-pro/css/all.css" rel="stylesheet" />
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=<53c71503-4541-48bd-8262-0e5d8ec21161>&lang=ru_RU" type="text/javascript"> </script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=<53c71503-4541-48bd-8262-0e5d8ec21161>&lang=ru_RU" type="text/javascript"></script>
     </environment>
 </head>
 <body>
+
     <div class="parallax">
         <div class="navigaion menu-content">
             <header>
@@ -24,19 +25,23 @@
                     <div class="logo">
                         @Html.ActionLink("ADVOKAT+", "Index", "Home", new { area = "" }, new { @class = "brand" })
                     </div>
-                    <ul>
-                        <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
-                        <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
-                        <li class="@(Context.Request.Path.Value.ToLower().Contains("legalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="LegalPersons">Юр. лицам</a></li>
-                        <li class="@(Context.Request.Path.Value.ToLower().Contains("physicalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="PhysicalPersons">Физ. лицам</a></li>
-                        <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
-                    </ul>
+                    <div class="navbar">
+                        <ul>
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
+                            @*<li class="@(Context.Request.Path.Value.ToLower().Contains("legalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="LegalPersons">Юр. лицам</a></li>
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("physicalpersons") ? "active " : "" ) "><a class="a" asp-area="" asp-controller="Home" asp-action="PhysicalPersons">Физ. лицам</a></li>*@
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
         </div>
     </div>
-    <div >
+    <div>
         @RenderBody()
+        <div id="bg-loader" class="bg-preloader">
+        </div>
         <div id="loader" class="preloader"><div></div><div></div></div>
     </div>
     <br />
@@ -58,8 +63,8 @@
                 <div>
                     <ul class="footer-widget-links">
                         <li><a href="/Home/Index">Домой</a></li>
-                        <li><a href="/Home/LegalPersons">Юр. лицам</a></li>
-                        <li><a href="/Home/PhysicalPersons">Физ. лицам</a></li>
+                        @*<li><a href="/Home/LegalPersons">Юр. лицам</a></li>
+                        <li><a href="/Home/PhysicalPersons">Физ. лицам</a></li>*@
                         <li><a href="/Home/Contacts">Контакты</a></li>
                         <li><a href="/Home/About">Обо мне</a></li>
                     </ul>
@@ -95,7 +100,14 @@
         </div>
         <br />
         <footer>
+            <br />
             <p>&copy; All Rights Reserved.</p>
+            <br />
+            <ul class="social-icons">
+                <li><a href="#"></a><i class="fab fa-telegram"></i> </li>
+                <li><a href="#"></a><i class="fab fa-skype"></i></li>
+                <li><a href="#"></a><i class="fab fa-viber"></i></li>
+            </ul>
         </footer>
     </div>
     <environment include="Development">

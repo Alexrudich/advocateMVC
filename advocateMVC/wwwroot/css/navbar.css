@@ -1,36 +1,41 @@
 ﻿
 nav {
     margin-top: 1px;
-
+    display: -webkit-flex;
+    display: flex;
 }
-    nav ul {
-        text-align: right;
-        margin-right: 190px;
+
+.navbar {
+    margin-left: auto;
+    text-align: right;
+    margin-right: 200px;
+}
+
+    .navbar ul li {
+        display: inline-block;
+        font-family: "Work Sans", Arial, sans-serif;
+        line-height: 1.8;
+        padding: 18px;
+        font-size: 18px;
     }
 
-        nav ul li {
-            display: inline-block;
+        .navbar ul li a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: 0.3s;
         }
-            nav ul li a {
-                font-family: "Work Sans", Arial, sans-serif;
-                line-height: 1.8;
-                padding: 18px;
-                font-size: 17px;
-                text-decoration: none;
-                display: block;
-                transition: 0.3s;
-                color: rgba(255, 255, 255, 0.5);
-                /*width: 1170px;*/
+            .navbar ul li a:hover {
+                color: #EA9215;
+            }
+            .navbar ul li a:hover, .navbar ul li a:focus {
+                color: rgba(255, 255, 255, 0.9)
             }
 
-                nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
-                    color: white;
-                    /*color: red;*/
-                }
-.active a {
-    color: #EA9215;
-}
-nav .logo .brand {
+    .navbar ul .active a{
+        color: #EA9215;
+    }
+
+.brand {
     font-family: "Work Sans", Arial, sans-serif;
     line-height: 1.8;
     padding: 18px;
@@ -43,5 +48,5 @@ nav .logo .brand {
     text-align: left;
     margin-left: 352px;
     top: 8em;
-    float: left;
+    /*float: left;*/
 }

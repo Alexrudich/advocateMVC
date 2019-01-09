@@ -11,7 +11,7 @@
 
     .preloader div {
         position: absolute;
-        border: 3px solid #ff0000;
+        border: 3px solid #808080; 
         opacity: 1;
         border-radius: 50%;
         animation: preloader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
@@ -38,3 +38,9 @@
         opacity: 0;
     }
 }
+/*.bg-preloader {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}*/
