@@ -20,15 +20,28 @@
     <div class="parallax">
         <div class="navigaion menu-content">
             <header>
+                <div class="contactbar">
+                    <div class="top-phone-number">
+                       <a href="tel:375296589506"> <p>Связь: +375 29 6589506 </p></a> 
+                    </div>
+                    <div class="top-social">
+                        <ul >
+                            <li><a href="tg://resolve?domain=+375296589506"><i class="fab fa-telegram-plane"></i> </a></li>
+                            <li><a href="viber://chat?number=%2B375296589506"><i class="fab fa-viber"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/anastasiya-halion-680097164/"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
                 <nav>
                     <div class="logo">
                         @Html.ActionLink("ADVOKAT+", "Index", "Home", new { area = "" }, new { @class = "brand" })
                     </div>
+
                     <div class="navbar">
                         <ul>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active" : "" ) "><a  asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
+                            <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -96,10 +109,10 @@
             <br />
             <p>&copy; All Rights Reserved.</p>
             <ul class="social-icons">
-                <li><a href="tg://resolve?domain=+375 29 658 9506"><i class="fab fa-telegram-plane"></i> </a></li>
-                <li><a href="https://wa.me/375296589506"><i class="fab fa-whatsapp"></i> </a></li>
-                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                <li><a href="viber://chat?number=+375296589506"><i class="fab fa-viber"></i></a></li>
+                <li><a href="https://wa.me/375296589506"><i class="fab fa-whatsapp-square"></i> </a></li>
+                <li><a href="tg://resolve?domain=+375296589506"><i class="fab fa-telegram-plane"></i> </a></li>
+                @*<li><a href="#"><i class="fab fa-skype"></i></a></li>*@
+                <li><a href="viber://chat?number=%2B375296589506"><i class="fab fa-viber"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/anastasiya-halion-680097164/"><i class="fab fa-linkedin"></i></a></li>
             </ul>
             <br />
