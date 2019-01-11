@@ -6,7 +6,6 @@ using advocateMVC.Models.Feedback;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-
 namespace advocateMVC.Controllers
 {
     public class HomeController : Controller
@@ -56,14 +55,5 @@ namespace advocateMVC.Controllers
                 return Contacts();
             }
         }
-        public IActionResult LegalPersons()
-        {
-            return View();
-        }
-        public IActionResult PhysicalPersons()
-        {
-            return View();
-        }
-       
     }
 }
