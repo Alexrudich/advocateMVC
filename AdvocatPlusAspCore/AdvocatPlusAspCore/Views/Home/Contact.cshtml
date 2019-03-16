@@ -1,0 +1,92 @@
+﻿@model AdvocatPlusAspCore.Models.Feedback.ContactModel;
+@{
+    ViewData["Title"] = "Контакты";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="form-container">
+    <div class="container">
+        <div class="form-box-complete">
+            <div class="contact-infobox">
+                <h3>Контактная информация</h3>
+                <ul>
+                    <li class="far fa-map-marker-alt"><p>Минская обл., Минский р-н,<br /> д. Боровляны-2, ул. Хвойная 2,<br />  Р-40, 1-й км2, ком. 27. </p></li>
+                    <li class="far fa-phone"><a href="tel://375296589506"> +375 29 658 95 06</a></li>
+                    <li class="fal fa-envelope"><a href="mailto:advokatplus@tut.by"> advokatplus@tut.by</a></li>
+                </ul>
+            </div>
+            <div class="form-box">
+                <h3>Связаться</h3>
+                <form asp-action="Index" asp-controller="Home" class="feedback-form" method="post">
+                    <div asp-validation-summary="All"></div>
+                    <div class="feedback-form-name">
+                        <div class="feedback-form-row">
+                            <div class="feedback-form table">
+                                <div class="feedback-form group">
+                                    @*<label asp-for="Contact.Name" class="feedback-form row right"></label>*@
+                                    <div class="feedback-form table column">
+                                        <input asp-for="Contact.Name" class="feedback-form control" type="text" placeholder="Ваше имя.." />
+                                        <span asp-validation-for="Contact.Name"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-form-row">
+                            <div class="feedback-form table">
+                                <div class="feedback-form group">
+                                    <div class="feedback-form table column">
+                                        <input asp-for="Contact.LastName" class="feedback-form control" type="text" placeholder="Ваша фамилия.." />
+                                        <span asp-validation-for="Contact.LastName"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-form-row">
+                        <div class="feedback-form table">
+                            <div class="feedback-form group">
+                                <div class="feedback-form table column">
+                                    <input asp-for="Contact.Email" class="feedback-form row right" type="text" placeholder="Ваш адрес электронной почты.." />
+                                    <span asp-validation-for="Contact.Email"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-form-row">
+                        <div class="feedback-form table">
+                            <div class="feedback-form group">
+                                <div class="feedback-form table column">
+                                    <input asp-for="Contact.PhoneNumber" class="feedback-form control" type="text" placeholder="Ваш номер мобильного телефона.." />
+                                    <span asp-validation-for="Contact.PhoneNumber"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-form-row">
+                        <div class="feedback-form table">
+                            <div class="feedback-form group">
+                                <div class="feedback-form table column">
+                                    <input asp-for="Contact.Message" class="feedback-form row right" type="text" placeholder="Ваше сообщение.." />
+                                    <span asp-validation-for="Contact.Message"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-form-row">
+                        <div class="feedback-form table">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div id="map" class="mymap">
+    <div class="map-container">
+
+    </div>
+</div>
