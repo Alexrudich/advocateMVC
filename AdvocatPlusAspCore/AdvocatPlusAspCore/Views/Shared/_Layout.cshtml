@@ -1,130 +1,178 @@
-﻿
-<!DOCTYPE html>
-
+﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <title>@ViewBag.Title</title>
-    <environment include="Development">
-        <link rel="icon" href="~/icons/icon-security.png" type="image/ico" />
-        <link rel="stylesheet" href="~/css/main.css" />
-        <link rel="stylesheet" href="~/css/navbar.css" />
-        <link rel="stylesheet" href="~/css/contacts.css" />
-        <link rel="stylesheet" href="~/css/loader.css" />
-        <link rel="stylesheet" href="~/css/fading.css" />
-        <link href="~/fontawesome-pro/css/all.css" rel="stylesheet" />
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=<53c71503-4541-48bd-8262-0e5d8ec21161>&lang=ru_RU" type="text/javascript"></script>
-    </environment>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Law &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FreeHTML5.co" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+
+
+
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="~/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="~/css/flexslider.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+
 </head>
 <body>
-    <div class="parallax">
-        <div class="navigaion menu-content">
-            <header>
-                <div class="contactbar">
-                    <div class="top-phone-number">
-                        <a href="tel://375296589506"> <p>Связь: +375 29 6589506 </p></a>
-                    </div>
-                    <div class="top-social">
-                        <ul>
-                            <li><a href="tg://resolve?domain=+375296589506"><i class="fab fa-telegram-plane"></i> </a></li>
-                            <li><a href="viber://chat?number=%2B375296589506"><i class="fab fa-viber"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/anastasiya-halion-680097164/"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <nav>
-                    <div class="logo">
-                        @Html.ActionLink("ADVOKAT+", "Index", "Home", new { area = "" }, new { @class = "brand" })
+
+    <div class="advocateplus-loader"></div>
+
+    <div id="page">
+        <nav class="advocateplus-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="advocateplus-logo"><a href="/Home/Index">ADVOKAT<span>+</span></a></div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                                <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
+                                <li class="@(Context.Request.Path.Value.ToLower().Contains("contact") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contact">Связаться</a></li>
+                                <li><a href="practice.html">Practice Areas</a></li>
+                                <li><a href="won.html">Won Cases</a></li>
+                                <li class="has-dropdown">
+                                    <a href="blog.html">Blog</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Web Design</a></li>
+                                        <li><a href="#">eCommerce</a></li>
+                                        <li><a href="#">Branding</a></li>
+                                        <li><a href="#">API</a></li>
+                                    </ul>
+                                </li>
+                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                                <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="navbar">
-                        <ul>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
-                            <li class="@(Context.Request.Path.Value.ToLower().Contains("contacts") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contacts">Связаться</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-        </div>
-    </div>
-    <div>
+                </div>
+            </div>
+        </nav>
         @RenderBody()
-        <div id="bg-loader" class="bg-preloader">
-        </div>
-        <div id="loader" class="preloader"><div></div><div></div></div>
-    </div>
-    <br />
-    <div class="container-footer-content">
-        <div class="footer-content-header">
-            <div class="footer-widget">
-                <div>
-                    <h4>О лицензии </h4>
+
+        <footer id="advocateplus-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-3 advocateplus-widget">
+                        <h4>О лицензии </h4>
+                        <p>Лицензия на право<br />осуществления адвокатской деятельности<br />№02240/2949 от 22.12.2017</p>
+                    </div>
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Навигация</h4>
+                        <ul class="advocateplus-footer-links">
+                            <li><a href="/Home/Index">Домой</a></li>
+                            <li><a href="/Home/Contacts">Контакты</a></li>
+                            <li><a href="/Home/About">Обо мне</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Контактная информация</h4>
+                        <ul class="advocateplus-footer-links">
+                            <li>Минская обл., Минский р-н, <br>д. Боровляны-2, ул. Хвойная 2,</li>
+                            <li> Р-40, 1-й км2, ком. 27.  </li>
+                            <li><a href="tel://375296589506">+375 29 658 95 06</a></li>
+                            <li><a href="mailto:advokatplus@tut.by">advokatplus@tut.by</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Часы работы</h4>
+                        <ul class="advocateplus-footer-links">
+                            <li>Пн - Чт: 9:00 - 20: 00</li>
+                            <li>Пт 8:00 - 18: 00</li>
+                            <li>Сб 9:30 - 15: 00</li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div>
-                    <p>Лицензия на право<br />осуществления адвокатской деятельности<br />№02240/2949 от 22.12.2017</p>
-                </div>
-            </div>
-            <div class="footer-widget">
-                <div>
-                    <h4>Навигация</h4>
-                </div>
-                <div>
-                    <ul class="footer-widget-links">
-                        <li><a href="/Home/Index">Домой</a></li>
-                        <li><a href="/Home/Contacts">Контакты</a></li>
-                        <li><a href="/Home/About">Обо мне</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-widget">
-                <div>
-                    <h4>Контактная информация</h4>
-                </div>
-                <div>
-                    <ul class="footer-widget-links">
-                        <li>Минская обл., Минский р-н, <br>д. Боровляны-2, ул. Хвойная 2,</li>
-                        <li> Р-40, 1-й км2, ком. 27.  </li>
-                        <li><a href="tel://375296589506">+375 29 658 95 06</a></li>
-                        <li><a href="mailto:advokatplus@tut.by">advokatplus@tut.by</a></li>
-                    </ul>
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; @DateTime.Now.Year - All Rights Reserved.</small>
+                            <small class="block">Developed and designed by <a href="https://github.com/Alexrudich/advocateMVC/" target="_blank">Alexander Rudich</a> @*Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>*@</small>
+                        </p>
+                        <p>
+                            <ul class="advocateplus-social-icons">
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
 
             </div>
-            <div class="footer-widget">
-                <div>
-                    <h4>Часы работы</h4>
-                </div>
-                <div>
-                    <ul class="footer-widget-links">
-                        <li>Пн - Чт: 9:00 - 20: 00</li>
-                        <li>Пт 8:00 - 18: 00</li>
-                        <li>Сб 9:30 - 15: 00</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <br />
-        <footer>
-            <br />
-            <p>&copy; All Rights Reserved.</p>
-            <ul class="social-icons">
-                <li><a href="https://wa.me/375296589506"><i class="fab fa-whatsapp-square"></i> </a></li>
-                <li><a href="tg://resolve?domain=+375296589506"><i class="fab fa-telegram-plane"></i> </a></li>
-                @*<li><a href="#"><i class="fab fa-skype"></i></a></li>*@
-                <li><a href="viber://chat?number=%2B375296589506"><i class="fab fa-viber"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/anastasiya-halion-680097164/"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-            <br />
         </footer>
     </div>
-    <environment include="Development">
-        <script src="~/js/loader.js"></script>
-        <script src="~/js/map.js"></script>
-        @*<script src="~/js/loader.js" asp-append-version="true"></script>*@
-    </environment>
 
-    @*@RenderSection("Scripts", required: false)*@
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+    <environment include="Development">
+        <!-- jQuery -->
+        <script src="~/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="~/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="~/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="~/js/jquery.waypoints.min.js"></script>
+        <!-- Stellar Parallax -->
+        <script src="~js/jquery.stellar.min.js"></script>
+        <!-- Carousel -->
+        <script src="~/js/owl.carousel.min.js"></script>
+        <!-- Flexslider -->
+        <script src="~/js/jquery.flexslider-min.js"></script>
+        <!-- countTo -->
+        <script src="~/js/js/jquery.countTo.js"></script>
+        <!-- Magnific Popup -->
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/js/magnific-popup-options.js"></script>
+        <!-- Main -->
+        <script src="~/js/main.js"></script>
+    </environment>
+   
 
 </body>
 </html>
+

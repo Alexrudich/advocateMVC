@@ -32,12 +32,12 @@ namespace AdvocatPlusAspCore.Controllers
             return View();
         }
 
-        public IActionResult Contacts()
+        public IActionResult Contact()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Contacts(ContactModel model)
+        public IActionResult Contact(ContactModel model)
         {
             if (ModelState.IsValid)
             {
@@ -53,7 +53,7 @@ namespace AdvocatPlusAspCore.Controllers
             }
             else
             {
-                return Contacts();
+                return Contact();
             }
         }
     }
