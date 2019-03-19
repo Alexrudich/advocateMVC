@@ -62,7 +62,7 @@
 
     this.render();
 
-    if (typeof(this.options.onUpdate) == 'function') {
+    if (typeof(this.options.onUpdate) === 'function') {
       this.options.onUpdate.call(this.$element, this.value);
     }
 
@@ -70,7 +70,7 @@
       clearInterval(this.interval);
       this.value = this.options.to;
 
-      if (typeof(this.options.onComplete) == 'function') {
+      if (typeof(this.options.onComplete) === 'function') {
         this.options.onComplete.call(this.$element, this.value);
       }
     }

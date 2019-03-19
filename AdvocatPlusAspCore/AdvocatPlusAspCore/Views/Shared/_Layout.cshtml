@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Law &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+    <title> ADVOKAT+</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-    <meta name="author" content="FreeHTML5.co" />
+    <meta name="description" content="Квалифицированне оказание юридической помощи" />
+    <meta name="keywords" content="адвокат Минской областной коллегии адвокатов, профессиональная квалификация, документы, адвокат Минск, адвокат Беларусь, юридическая помощь, юридические услуги">
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
@@ -15,15 +14,12 @@
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
+    @*<meta name="twitter:title" content="" />
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta name="twitter:card" content="" />*@
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
-
-
-
+    @*<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">*@
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="~/css/animate.css">
@@ -31,19 +27,15 @@
     <link rel="stylesheet" href="~/css/icomoon.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="~/css/bootstrap.css">
-
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="~/css/magnific-popup.css">
-
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="~/css/owl.carousel.min.css">
     <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
     <!-- Flexslider  -->
     <link rel="stylesheet" href="~/css/flexslider.css">
-
     <!-- Theme style  -->
     <link rel="stylesheet" href="~/css/style.css">
-
     <!-- Modernizr JS -->
     <script src="~/js/modernizr-2.6.2.min.js"></script>
 
@@ -65,7 +57,7 @@
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("contact") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contact">Связаться</a></li>
-                                <li><a href="practice.html">Practice Areas</a></li>
+                                @*<li><a href="practice.html">Practice Areas</a></li>
                                 <li><a href="won.html">Won Cases</a></li>
                                 <li class="has-dropdown">
                                     <a href="blog.html">Blog</a>
@@ -75,9 +67,9 @@
                                         <li><a href="#">Branding</a></li>
                                         <li><a href="#">API</a></li>
                                     </ul>
-                                </li>
-                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
-                                <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
+                                </li>*@
+                                @*<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                                <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>*@
                             </ul>
                         </div>
                     </div>
@@ -128,7 +120,7 @@
                     <div class="col-md-12 text-center">
                         <p>
                             <small class="block">&copy; @DateTime.Now.Year - All Rights Reserved.</small>
-                            <small class="block">Developed and designed by <a href="https://github.com/Alexrudich/advocateMVC/" target="_blank">Alexander Rudich</a> @*Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>*@</small>
+                            <small class="block">Developed and designed by <a href="https://www.linkedin.com/in/alexander-rudich-75a8b0156/" target="_blank">Alexander Rudich</a> @*Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>*@</small>
                         </p>
                         <p>
                             <ul class="advocateplus-social-icons">
@@ -150,6 +142,7 @@
     </div>
     <environment include="Development">
         <!-- jQuery -->
+
         <script src="~/js/jquery.min.js"></script>
         <!-- jQuery Easing -->
         <script src="~/js/jquery.easing.1.3.js"></script>
@@ -158,21 +151,19 @@
         <!-- Waypoints -->
         <script src="~/js/jquery.waypoints.min.js"></script>
         <!-- Stellar Parallax -->
-        <script src="~js/jquery.stellar.min.js"></script>
+        <script src="~/js/jquery.stellar.min.js"></script>
         <!-- Carousel -->
         <script src="~/js/owl.carousel.min.js"></script>
         <!-- Flexslider -->
         <script src="~/js/jquery.flexslider-min.js"></script>
         <!-- countTo -->
-        <script src="~/js/js/jquery.countTo.js"></script>
+        <script src="~/js/jquery.countTo.js"></script>
         <!-- Magnific Popup -->
         <script src="~/js/jquery.magnific-popup.min.js"></script>
         <script src="~/js/magnific-popup-options.js"></script>
         <!-- Main -->
         <script src="~/js/main.js"></script>
     </environment>
-   
-
 </body>
 </html>
 
