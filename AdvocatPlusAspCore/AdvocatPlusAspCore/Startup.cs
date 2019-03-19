@@ -42,7 +42,7 @@ namespace AdvocatPlusAspCore
 
             EmailServerConfiguration config = new EmailServerConfiguration
             {
-                SmtpPassword = "password",
+                SmtpPassword = "myastrovskaya3",
                 SmtpServer = "smtp.mail.ru",
                 SmtpUsername = "nastya0921@mail.ru"
             };
