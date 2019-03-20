@@ -49,18 +49,18 @@
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("payment") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Payment">Гонорар</a></li>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("contact") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contact">Связаться</a></li>
                                 @*<li><a href="practice.html">Области практики</a></li>
-                                <li><a href="won.html">Дел выиграно</a></li>*@
+                                    <li><a href="won.html">Дел выиграно</a></li>*@
                                 @*<li class="has-dropdown">
-                                    <a href="blog.html">Мой блог</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Веб дизайн</a></li>
-                                        <li><a href="#">Электронная коммерция</a></li>
-                                        <li><a href="#">Брендинг</a></li>
-                                        <li><a href="#">API</a></li>
-                                    </ul>
-                                </li>
-                                <li class="btn-cta"><a href="#"><span>Войти</span></a></li>
-                                <li class="btn-cta"><a href="#"><span>Зарегистрироваться</span></a></li>*@
+                                        <a href="blog.html">Мой блог</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Веб дизайн</a></li>
+                                            <li><a href="#">Электронная коммерция</a></li>
+                                            <li><a href="#">Брендинг</a></li>
+                                            <li><a href="#">API</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="btn-cta"><a href="#"><span>Войти</span></a></li>
+                                    <li class="btn-cta"><a href="#"><span>Зарегистрироваться</span></a></li>*@
                             </ul>
                         </div>
                     </div>
@@ -153,9 +153,22 @@
         <script src="~/js/magnific-popup-options.js"></script>
         <!-- Main -->
         <script src="~/js/main.js"></script>
-
-
     </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+        </script>
+    </environment>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
 

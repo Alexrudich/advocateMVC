@@ -16,6 +16,7 @@ namespace AdvocatPlusAspCore
 {
     public class Startup
     {
+
         private readonly IHostingEnvironment _env;
         private readonly IConfiguration _config;
         private readonly ILoggerFactory _loggerFactory;
@@ -54,7 +55,15 @@ namespace AdvocatPlusAspCore
             services.AddSingleton<EmailServerConfiguration>(config);
             services.AddTransient<IEmailService, MailKitEmailService>();
             services.AddSingleton<EmailAddress>(FromEmailAddress);
-            services.AddMvc();
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_0);
 
         }
 
@@ -64,8 +73,15 @@ namespace AdvocatPlusAspCore
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
 
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCookiePolicy();
 
             app.UseMvc(routes =>
             {
