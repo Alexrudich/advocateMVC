@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@ViewBag.Title</title>
+    <title>Advokat+ | @ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Квалифицированне оказание юридической помощи" />
     <meta name="keywords" content="адвокат Минской областной коллегии адвокатов, профессиональная квалификация, документы, адвокат Минск, адвокат Беларусь, юридическая помощь, юридические услуги">
 
     <environment include="Development">
         <!-- Icon -->
-        <link rel="icon" href="~/icons/icon-security.png" type="image/ico" />
+        <link rel="icon" href="~/icons/tab-icon2.png" type="image/ico" />
         <!-- Animate.css -->
         <link rel="stylesheet" href="~/css/animate.css">
         <!-- Icomoon Icon Fonts-->
@@ -46,11 +46,11 @@
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
-                                <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Обо мне</a></li>
+                                <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Гонорар</a></li>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("contact") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contact">Связаться</a></li>
                                 @*<li><a href="practice.html">Области практики</a></li>
                                 <li><a href="won.html">Дел выиграно</a></li>*@
-                                <li class="has-dropdown">
+                                @*<li class="has-dropdown">
                                     <a href="blog.html">Мой блог</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Веб дизайн</a></li>
@@ -60,7 +60,7 @@
                                     </ul>
                                 </li>
                                 <li class="btn-cta"><a href="#"><span>Войти</span></a></li>
-                                <li class="btn-cta"><a href="#"><span>Зарегистрироваться</span></a></li>
+                                <li class="btn-cta"><a href="#"><span>Зарегистрироваться</span></a></li>*@
                             </ul>
                         </div>
                     </div>
