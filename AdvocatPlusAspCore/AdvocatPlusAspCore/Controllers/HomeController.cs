@@ -19,15 +19,15 @@ namespace AdvocatPlusAspCore.Controllers
             EmailService = _emailService;
         }
         [HttpGet]
-        //[Route("")] //need for highlighting <li> index by css
-        //[Route("Home")]
-        //[Route("Home/Index")]
+        [Route("")] //need for highlighting <li> index by css
+        [Route("Home")]
+        [Route("Home/Index")]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Payment()
         {
             return View();
         }

@@ -46,7 +46,7 @@
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("index") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
-                                <li class="@(Context.Request.Path.Value.ToLower().Contains("about") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="About">Гонорар</a></li>
+                                <li class="@(Context.Request.Path.Value.ToLower().Contains("payment") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Payment">Гонорар</a></li>
                                 <li class="@(Context.Request.Path.Value.ToLower().Contains("contact") ? "active" : "" ) "><a asp-area="" asp-controller="Home" asp-action="Contact">Связаться</a></li>
                                 @*<li><a href="practice.html">Области практики</a></li>
                                 <li><a href="won.html">Дел выиграно</a></li>*@
@@ -81,8 +81,8 @@
                         <h4>Навигация</h4>
                         <ul class="advocateplus-footer-links">
                             <li><a href="/Home/Index">Домой</a></li>
-                            <li><a href="/Home/Contacts">Контакты</a></li>
-                            <li><a href="/Home/About">Обо мне</a></li>
+                            <li><a href="/Home/Contact">Контакты</a></li>
+                            <li><a href="/Home/Payment">Обо мне</a></li>
                         </ul>
                     </div>
 
